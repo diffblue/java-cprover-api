@@ -345,7 +345,9 @@ public final class CProver {
    * Retrieves the current locking count for 'object'.
    */
   public static int getMonitorCount(Object object) {
-    return object.cproverMonitorCount;
+    // Dummy implementation.
+    // The actual implementation is in JBMC itself.
+    return 0;
   }
 
   /**
