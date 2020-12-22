@@ -265,10 +265,10 @@ public final class CProver {
   /**
    * This method is used by JBMC to return the ID of the executing thread.
    */
-  public static int getCurrentThreadID() {
+  public static int getCurrentThreadId() {
     if (enableConcurrency) {
       throw new RuntimeException(
-        "Cannot execute program with CProver.getCurrentThreadID()");
+        "Cannot execute program with CProver.getCurrentThreadId()");
     }
     return 0;
   }
